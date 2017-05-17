@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<products>
+	<product>
+		<path>images/gulpaprika.jpg</path>
+		<caption>Frö Gul paprika </caption>
+		<price>11</price>
+	</product>
+
+	<product>
+		<path>images/gurka.jpg</path>
+		<caption>Frö gurka.</caption>
+		<price>7</price>
+	</product>
+	
+	<product>
+		<path>images/jord.jpg</path>
+		<caption>Planteringsjord 50 l.</caption>
+		<price>37</price>
+	</product>
+
+	<product>
+		<path>images/krusbär.jpg</path>
+		<caption>Krusbärsbuske. </caption>
+		<price>61</price>
+	</product>
+
+	<product>
+		<path>images/majs.jpg</path>
+		<caption>Frö majs. </caption>
+		<price>22</price>
+	</product>
+	<product>
+		<path>images/nypon.jpg</path>
+		<caption>Vresros. </caption>
+		<price>79</price>
+	</product>
+	<product>	
+		<path>images/redpaprika.jpg</path>
+		<caption>Frö röd paprika. </caption>
+		<price>11</price>
+	</product>
+	<product>
+		<path>images/tomat.jpg</path>
+		<caption>Frö tomat. </caption>
+		<price>11</price>
+	</product>
+	<product>
+		<path>images/tomat1.jpg</path>
+		<caption>frö tomat. </caption>
+		<price>11</price>
+	</product>
+	<product>
+		<path>images/vaxthus.jpg</path>
+		<caption>Växthus i trä, 12 kvm. </caption>
+		<price>12000</price>
+	</product>	
+</products>

@@ -1,0 +1,166 @@
+$radius:170px;
+$headerGreen:#c9ecae;
+$align:center;
+$headerFontSize:36px;
+$padding: 10px;
+$wrapperWidth: 1024 - ($padding * 2);
+$type: bear;
+$lineheight:2;
+
+@mixin background{
+	background-color:#ecf9e3;
+}
+
+@mixin border-radius($radius) {
+  	-webkit-border-radius: $radius;
+     -moz-border-radius: $radius;
+      -ms-border-radius: $radius;
+          border-radius: $radius;
+}
+
+p {
+  @if $type == ocean {
+    color: blue;
+  } @else if $type == matador {
+    color: red;
+  } @else if $type == monster {
+    color: green;
+  } @else {
+    color: black;
+  }
+}
+
+body{
+	@include background;
+	padding:2% 7% 7% 7%;
+}
+
+#wrapper{
+	 max-width:$wrapperWidth px;
+	 min-height:850px;
+	 margin: 0 auto;
+	 padding:5% 5% 25% 5%;
+}
+
+nav{
+	display:none;
+}
+
+.product{
+	padding:5px 5px 10px 5px;
+	border:1px solid $headerGreen;
+	margin:10px;
+	width:150px;
+	height:160px;
+	float:left;
+	background-color:#d9f6c2;
+
+	img{
+		width:98%;
+		height:70%;
+		padding:1%;
+		background-color:$headerGreen;
+		}
+}
+
+h{
+	text-align:$align;
+}
+h1{
+   	@extend h;
+    font-size:23px;
+	padding-bottom:30px;
+}
+
+h2{
+    @extend h;
+	font-size:15px;
+	img{
+		width:15%;
+		height:11%;
+	}
+}
+
+
+header{
+	font-size:$headerFontSize;	
+	font-weight:bold;
+	font-family:"Arial Black", Gadget, sans-serif;
+	padding-top:15px;
+	
+	text-align:center;
+	color:$headerGreen;
+	
+}
+
+.frontPic{
+	margin:1% 2% 1% 18%;
+	padding:10%;
+	img{
+		width:75%;
+		height:45%;
+		@include border-radius($radius);
+	}
+}
+
+.image{
+	border:1px solid black;
+	padding:10px;
+	float:left;
+
+	img{
+		width:170px;
+		height:130px;
+		padding:12px;
+	}
+}
+
+.menu{
+	padding:10% 5% 1% 15%;
+	
+	a{
+		font-size:19px;
+		text-decoration:none;
+		padding:25px;
+		color:#2aa303;
+		font-weight:bold;
+	}
+}
+
+
+ul{
+   list-style-type: none;
+   li{
+	border:1px solid black;
+	text-align:center;
+	font-size:30px;
+	color:#2aa303;
+	font-weight:bold;
+	font-family:"Arial Black", Gadget, sans-serif;
+	height:10px;
+
+  }
+  @for $i from 1 through  10{
+	li:nth-child(#{$i}){
+	background-color: #b8f9a3*(2-($i*.4));
+	}
+  }
+}
+
+
+#form{
+	
+	line-height:$lineheight;
+	padding-left:100px;
+	input{
+		padding-left:15px;
+		margin-left:15px;
+	}
+}
+
+.contact{
+	text-align:$align;
+	padding-top:15px;
+	line-height:$lineheight;
+}
+

@@ -1,0 +1,13 @@
+@media screen and (max-width: 1600px) {
+	@import "desctop";
+}
+
+
+@media screen and (max-width: 760px) {
+	@import "tablet";
+}
+
+
+@media screen and (max-width: 480px) {
+	@import "mobile";
+}

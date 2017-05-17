@@ -1,0 +1,13 @@
+body {
+  background-color: #00b4b2; }
+
+@media screen and (min-width: 1024px) {
+  background-color: green;
+  image {
+    padding: 16px 25px;
+    height: 90px;
+    width: 150px; } }
+@media screen and (min-width: 760px) {
+  background-color: blue; }
+
+/*# sourceMappingURL=style.css.map */
